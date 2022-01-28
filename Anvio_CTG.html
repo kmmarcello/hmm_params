@@ -173,7 +173,349 @@ pre code {
 
 <div id="conceptual-steps" class="section level2">
 <h2>Conceptual steps</h2>
-<p>#Anvio</p>
+<pre class="r"><code>library(&quot;tidyverse&quot;)
+library(&quot;janitor&quot;)
+library(&quot;skimr&quot;)</code></pre>
+<pre class="r"><code>cyanobacteria_metadata &lt;- readr::read_csv(&quot;data/Cyano_wholegenome_metadata.csv&quot;)</code></pre>
+<pre><code>## New names:
+## * `` -&gt; ...22
+## * `` -&gt; ...23</code></pre>
+<pre><code>## Rows: 193 Columns: 23</code></pre>
+<pre><code>## ── Column specification ────────────────────────────────────────────────────────
+## Delimiter: &quot;,&quot;
+## chr (21): GenBank Assembly ID (Accession.version), RefSeq Assembly ID (Acces...
+## dbl  (2): GenBank release ID, UIDs</code></pre>
+<pre><code>## 
+## ℹ Use `spec()` to retrieve the full column specification for this data.
+## ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.</code></pre>
+<pre class="r"><code>skim(cyanobacteria_metadata)</code></pre>
+<table>
+<caption>Data summary</caption>
+<tbody>
+<tr class="odd">
+<td align="left">Name</td>
+<td align="left">cyanobacteria_metadata</td>
+</tr>
+<tr class="even">
+<td align="left">Number of rows</td>
+<td align="left">193</td>
+</tr>
+<tr class="odd">
+<td align="left">Number of columns</td>
+<td align="left">23</td>
+</tr>
+<tr class="even">
+<td align="left">_______________________</td>
+<td align="left"></td>
+</tr>
+<tr class="odd">
+<td align="left">Column type frequency:</td>
+<td align="left"></td>
+</tr>
+<tr class="even">
+<td align="left">character</td>
+<td align="left">21</td>
+</tr>
+<tr class="odd">
+<td align="left">numeric</td>
+<td align="left">2</td>
+</tr>
+<tr class="even">
+<td align="left">________________________</td>
+<td align="left"></td>
+</tr>
+<tr class="odd">
+<td align="left">Group variables</td>
+<td align="left">None</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Variable type: character</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th align="left">skim_variable</th>
+<th align="right">n_missing</th>
+<th align="right">complete_rate</th>
+<th align="right">min</th>
+<th align="right">max</th>
+<th align="right">empty</th>
+<th align="right">n_unique</th>
+<th align="right">whitespace</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">GenBank Assembly ID (Accession.version)</td>
+<td align="right">2</td>
+<td align="right">0.99</td>
+<td align="right">3</td>
+<td align="right">15</td>
+<td align="right">0</td>
+<td align="right">191</td>
+<td align="right">0</td>
+</tr>
+<tr class="even">
+<td align="left">RefSeq Assembly ID (Accession.version)</td>
+<td align="right">6</td>
+<td align="right">0.97</td>
+<td align="right">3</td>
+<td align="right">15</td>
+<td align="right">0</td>
+<td align="right">184</td>
+<td align="right">0</td>
+</tr>
+<tr class="odd">
+<td align="left">RefSeq release ID</td>
+<td align="right">6</td>
+<td align="right">0.97</td>
+<td align="right">3</td>
+<td align="right">8</td>
+<td align="right">0</td>
+<td align="right">184</td>
+<td align="right">0</td>
+</tr>
+<tr class="even">
+<td align="left">Accession #</td>
+<td align="right">6</td>
+<td align="right">0.97</td>
+<td align="right">8</td>
+<td align="right">19</td>
+<td align="right">0</td>
+<td align="right">186</td>
+<td align="right">0</td>
+</tr>
+<tr class="odd">
+<td align="left">Organism</td>
+<td align="right">6</td>
+<td align="right">0.97</td>
+<td align="right">15</td>
+<td align="right">73</td>
+<td align="right">0</td>
+<td align="right">183</td>
+<td align="right">0</td>
+</tr>
+<tr class="even">
+<td align="left">Genus</td>
+<td align="right">170</td>
+<td align="right">0.12</td>
+<td align="right">6</td>
+<td align="right">19</td>
+<td align="right">0</td>
+<td align="right">19</td>
+<td align="right">0</td>
+</tr>
+<tr class="odd">
+<td align="left">Species</td>
+<td align="right">168</td>
+<td align="right">0.13</td>
+<td align="right">6</td>
+<td align="right">28</td>
+<td align="right">0</td>
+<td align="right">24</td>
+<td align="right">0</td>
+</tr>
+<tr class="even">
+<td align="left">Strain</td>
+<td align="right">171</td>
+<td align="right">0.11</td>
+<td align="right">3</td>
+<td align="right">10</td>
+<td align="right">0</td>
+<td align="right">21</td>
+<td align="right">0</td>
+</tr>
+<tr class="odd">
+<td align="left">environment</td>
+<td align="right">181</td>
+<td align="right">0.06</td>
+<td align="right">5</td>
+<td align="right">6</td>
+<td align="right">0</td>
+<td align="right">2</td>
+<td align="right">0</td>
+</tr>
+<tr class="even">
+<td align="left">Storage/Collection</td>
+<td align="right">179</td>
+<td align="right">0.07</td>
+<td align="right">3</td>
+<td align="right">80</td>
+<td align="right">0</td>
+<td align="right">6</td>
+<td align="right">0</td>
+</tr>
+<tr class="odd">
+<td align="left">Regional Loaction</td>
+<td align="right">82</td>
+<td align="right">0.58</td>
+<td align="right">3</td>
+<td align="right">70</td>
+<td align="right">0</td>
+<td align="right">87</td>
+<td align="right">0</td>
+</tr>
+<tr class="even">
+<td align="left">geographic feature</td>
+<td align="right">114</td>
+<td align="right">0.41</td>
+<td align="right">4</td>
+<td align="right">81</td>
+<td align="right">0</td>
+<td align="right">65</td>
+<td align="right">0</td>
+</tr>
+<tr class="odd">
+<td align="left">Environment Detail</td>
+<td align="right">95</td>
+<td align="right">0.51</td>
+<td align="right">3</td>
+<td align="right">120</td>
+<td align="right">0</td>
+<td align="right">77</td>
+<td align="right">0</td>
+</tr>
+<tr class="even">
+<td align="left">Tempurature</td>
+<td align="right">175</td>
+<td align="right">0.09</td>
+<td align="right">4</td>
+<td align="right">23</td>
+<td align="right">0</td>
+<td align="right">17</td>
+<td align="right">0</td>
+</tr>
+<tr class="odd">
+<td align="left">Lat/Long</td>
+<td align="right">144</td>
+<td align="right">0.25</td>
+<td align="right">7</td>
+<td align="right">28</td>
+<td align="right">0</td>
+<td align="right">44</td>
+<td align="right">0</td>
+</tr>
+<tr class="even">
+<td align="left">Collection date</td>
+<td align="right">145</td>
+<td align="right">0.25</td>
+<td align="right">4</td>
+<td align="right">41</td>
+<td align="right">0</td>
+<td align="right">29</td>
+<td align="right">0</td>
+</tr>
+<tr class="odd">
+<td align="left">NCBI taxonomy browser</td>
+<td align="right">6</td>
+<td align="right">0.97</td>
+<td align="right">45</td>
+<td align="right">114</td>
+<td align="right">0</td>
+<td align="right">184</td>
+<td align="right">0</td>
+</tr>
+<tr class="even">
+<td align="left">Primary Source</td>
+<td align="right">56</td>
+<td align="right">0.71</td>
+<td align="right">23</td>
+<td align="right">149</td>
+<td align="right">0</td>
+<td align="right">101</td>
+<td align="right">0</td>
+</tr>
+<tr class="odd">
+<td align="left">Other source</td>
+<td align="right">119</td>
+<td align="right">0.38</td>
+<td align="right">44</td>
+<td align="right">100</td>
+<td align="right">0</td>
+<td align="right">74</td>
+<td align="right">0</td>
+</tr>
+<tr class="even">
+<td align="left">…22</td>
+<td align="right">158</td>
+<td align="right">0.18</td>
+<td align="right">44</td>
+<td align="right">100</td>
+<td align="right">0</td>
+<td align="right">34</td>
+<td align="right">0</td>
+</tr>
+<tr class="odd">
+<td align="left">…23</td>
+<td align="right">190</td>
+<td align="right">0.02</td>
+<td align="right">44</td>
+<td align="right">46</td>
+<td align="right">0</td>
+<td align="right">3</td>
+<td align="right">0</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Variable type: numeric</strong></p>
+<table>
+<colgroup>
+<col width="18%" />
+<col width="9%" />
+<col width="13%" />
+<col width="7%" />
+<col width="7%" />
+<col width="5%" />
+<col width="6%" />
+<col width="7%" />
+<col width="8%" />
+<col width="8%" />
+<col width="5%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th align="left">skim_variable</th>
+<th align="right">n_missing</th>
+<th align="right">complete_rate</th>
+<th align="right">mean</th>
+<th align="right">sd</th>
+<th align="right">p0</th>
+<th align="right">p25</th>
+<th align="right">p50</th>
+<th align="right">p75</th>
+<th align="right">p100</th>
+<th align="left">hist</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">GenBank release ID</td>
+<td align="right">6</td>
+<td align="right">0.97</td>
+<td align="right">7686917</td>
+<td align="right">8722532</td>
+<td align="right">8728</td>
+<td align="right">502518</td>
+<td align="right">3359378</td>
+<td align="right">16043918</td>
+<td align="right">23655148</td>
+<td align="left">▇▂▁▁▃</td>
+</tr>
+<tr class="even">
+<td align="left">UIDs</td>
+<td align="right">6</td>
+<td align="right">0.97</td>
+<td align="right">7652210</td>
+<td align="right">8791496</td>
+<td align="right">29508</td>
+<td align="right">502758</td>
+<td align="right">3389878</td>
+<td align="right">16125133</td>
+<td align="right">23759508</td>
+<td align="left">▇▂▁▁▃</td>
+</tr>
+</tbody>
+</table>
 </div>
 
 
