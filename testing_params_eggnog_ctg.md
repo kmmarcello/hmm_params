@@ -9,7 +9,7 @@ output:
     keep_md: yes
 ---
 
-## Testing Parameters for HMMs 
+# Testing Parameters for HMMs 
 
 These are the websites and workflows I used:
 
@@ -18,7 +18,7 @@ These are the websites and workflows I used:
 [HMM hits Matrix](https://anvio.org/help/main/programs/anvi-script-gen-hmm-hits-matrix-across-genomes/)  
 [EggNOG database](http://eggnog5.embl.de/#/app/results)
 
-### Making HMM file for Anvi'o (x3)
+## Making HMM file for Anvi'o (x3)
 ***
 Custom HMM folder contains:  
 genes.hmm.gz - concatenated hmm profiles from EggNOG  
@@ -30,9 +30,9 @@ noise_cutoff_terms.txt - E 1e-5, - E 1e-12, -E 1e-20
 Completed - E 1e-30, now testing stringency of noise cutoff  
 HMMs downloaded from EggNOG  
 
-### Genomes used
+## Genomes used
 ***
-#### NCBI cyanobacteria whole genome sequences (WGS), filamentous  
+### NCBI cyanobacteria whole genome sequences (WGS), filamentous  
 kmrcello@farm:~/cyanobacteria/outputs/db/filamentous-subset  
 
 ### Anvi'o
@@ -79,7 +79,7 @@ anvi-get-sequences-for-hmm-hits --external-genomes external-genomes-filamentous-
                                 --hmm-source hmms \
                                 --gene-names COG2609.faa.final_tree.fa \
                                 --get-aa-sequence \
-                                -o cold-genes-aa.fasta  
+                                -o aceE-5-aa.fasta  
 ```
 
 ###### 5. Get table of HMM hits
@@ -87,7 +87,7 @@ anvi-get-sequences-for-hmm-hits --external-genomes external-genomes-filamentous-
 ```r
 anvi-script-gen-hmm-hits-matrix-across-genomes --external-genomes external-genomes-filamentous-names.tsv \
                                                --hmm-source hmms \
-                                               -o output.txt
+                                               -o output-12.txt
 ```
 
 

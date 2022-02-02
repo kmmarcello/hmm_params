@@ -247,15 +247,15 @@ div.tocify {
 </div>
 
 
-<div id="testing-parameters-for-hmms" class="section level2">
-<h2>Testing Parameters for HMMs</h2>
+<div id="testing-parameters-for-hmms" class="section level1">
+<h1>Testing Parameters for HMMs</h1>
 <p>These are the websites and workflows I used:</p>
 <p><a href="https://merenlab.org/2017/06/07/phylogenomics/">Anvio phylogenomics workflow</a><br />
 <a href="https://merenlab.org/2016/05/21/archaeal-single-copy-genes/">Making your own HMM database</a><br />
 <a href="https://anvio.org/help/main/programs/anvi-script-gen-hmm-hits-matrix-across-genomes/">HMM hits Matrix</a><br />
 <a href="http://eggnog5.embl.de/#/app/results">EggNOG database</a></p>
-<div id="making-hmm-file-for-anvio-x3" class="section level3">
-<h3>Making HMM file for Anvi’o (x3)</h3>
+<div id="making-hmm-file-for-anvio-x3" class="section level2">
+<h2>Making HMM file for Anvi’o (x3)</h2>
 <hr />
 <p>Custom HMM folder contains:<br />
 genes.hmm.gz - concatenated hmm profiles from EggNOG<br />
@@ -266,13 +266,12 @@ noise_cutoff_terms.txt - E 1e-5, - E 1e-12, -E 1e-20</p>
 <p>Completed - E 1e-30, now testing stringency of noise cutoff<br />
 HMMs downloaded from EggNOG</p>
 </div>
-<div id="genomes-used" class="section level3">
-<h3>Genomes used</h3>
+<div id="genomes-used" class="section level2">
+<h2>Genomes used</h2>
 <hr />
-<div id="ncbi-cyanobacteria-whole-genome-sequences-wgs-filamentous" class="section level4">
-<h4>NCBI cyanobacteria whole genome sequences (WGS), filamentous</h4>
+<div id="ncbi-cyanobacteria-whole-genome-sequences-wgs-filamentous" class="section level3">
+<h3>NCBI cyanobacteria whole genome sequences (WGS), filamentous</h3>
 <p><a href="mailto:kmrcello@farm" class="email">kmrcello@farm</a>:~/cyanobacteria/outputs/db/filamentous-subset</p>
-</div>
 </div>
 <div id="anvio" class="section level3">
 <h3>Anvi’o</h3>
@@ -312,13 +311,14 @@ anvi-get-sequences-for-hmm-hits --external-genomes external-genomes-filamentous-
                                 --hmm-source hmms \
                                 --gene-names COG2609.faa.final_tree.fa \
                                 --get-aa-sequence \
-                                -o cold-genes-aa.fasta  </code></pre>
+                                -o aceE-5-aa.fasta  </code></pre>
 </div>
 <div id="get-table-of-hmm-hits" class="section level6">
 <h6>5. Get table of HMM hits</h6>
 <pre class="r"><code>anvi-script-gen-hmm-hits-matrix-across-genomes --external-genomes external-genomes-filamentous-names.tsv \
                                                --hmm-source hmms \
-                                               -o output.txt</code></pre>
+                                               -o output-12.txt</code></pre>
+</div>
 </div>
 </div>
 </div>
