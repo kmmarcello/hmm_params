@@ -2,13 +2,10 @@
 title: "cold_genes_HMMs"
 author: "Kaylah Marcello"
 date: "1/31/2022"
-output: 
+output:
   html_document:
     toc: yes
     toc_float: yes
-    keep_md: yes
-  pdf_document:
-    toc: yes 
     keep_md: yes
 ---
 
@@ -43,7 +40,13 @@ hope (v7.1)
 
 ##### Pre analysis - reformat fasta file names:
 ###### 1. Convert to an "improved" fasta header, saves file-name-key in a tsv
-`anvi-script-reformat-fasta contigs.fa -o contigs-fixed.fa -l 0 --simplify-names --report-files contigs.tsv`  
+
+```r
+anvi-script-reformat-fasta -c contigs.fa 
+                           -o contigs-fixed.fa -l 0 
+                           --simplify-names 
+                           --report-files contigs.tsv
+```
 
 ###### 2. Generate an anvio-ready genome database (.db) and run HMMS  
 
@@ -51,21 +54,41 @@ hope (v7.1)
 for i in `ls *fa | awk 'BEGIN{FS=".fa"}{print $1}'`
 do
   anvi-gen-contigs-database -f $i.fa -o $i.db -T 4
-  anvi-run-hmms -c $i.db
 done
 ```
 
+###### 3. Run HMMs from our own file
+
+```bash
+for i in `ls ./outputs/db/filamentous-subset/*db | awk 'BEGIN{FS=".fa"}{print $1}'`
+do
+  anvi-run-hmms -c $i --hmm-profile-dir hmms --just-do-it
+done
 ```
-## ls: *fa: No such file or directory
+
+###### 4. Use the program anvi-get-sequences-for-hmm-hits to get sequences out of genomes. 
+substitute gene name for all genes for GhoastKOALA
+
+```r
+anvi-get-sequences-for-hmm-hits --external-genomes external-genomes-filamentous-names.tsv \
+                                --hmm-source hmms \
+                                --gene-names COG2609.faa.final_tree.fa \
+                                -o aceE-12-dna.fasta  
+  
+anvi-get-sequences-for-hmm-hits --external-genomes external-genomes-filamentous-names.tsv \
+                                --hmm-source hmms \
+                                --gene-names COG2609.faa.final_tree.fa \
+                                --get-aa-sequence \
+                                -o cold-genes-aa.fasta  
 ```
 
+###### 5. Get table of HMM hits
 
-
-
-
-
-
-    
+```r
+anvi-script-gen-hmm-hits-matrix-across-genomes --external-genomes external-genomes-filamentous-names.tsv \
+                                               --hmm-source hmms \
+                                               -o output.txt
+```
 
 
 

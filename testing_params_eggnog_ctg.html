@@ -281,16 +281,44 @@ HMMs downloaded from EggNOG</p>
 <h5>Pre analysis - reformat fasta file names:</h5>
 <div id="convert-to-an-improved-fasta-header-saves-file-name-key-in-a-tsv" class="section level6">
 <h6>1. Convert to an “improved” fasta header, saves file-name-key in a tsv</h6>
-<p><code>anvi-script-reformat-fasta contigs.fa -o contigs-fixed.fa -l 0 --simplify-names --report-files contigs.tsv</code></p>
+<pre class="r"><code>anvi-script-reformat-fasta -c contigs.fa 
+                           -o contigs-fixed.fa -l 0 
+                           --simplify-names 
+                           --report-files contigs.tsv</code></pre>
 </div>
 <div id="generate-an-anvio-ready-genome-database-.db-and-run-hmms" class="section level6">
 <h6>2. Generate an anvio-ready genome database (.db) and run HMMS</h6>
 <pre class="bash"><code>for i in `ls *fa | awk &#39;BEGIN{FS=&quot;.fa&quot;}{print $1}&#39;`
 do
   anvi-gen-contigs-database -f $i.fa -o $i.db -T 4
-  anvi-run-hmms -c $i.db
 done</code></pre>
-<pre><code>## ls: *fa: No such file or directory</code></pre>
+</div>
+<div id="run-hmms-from-our-own-file" class="section level6">
+<h6>3. Run HMMs from our own file</h6>
+<pre class="bash"><code>for i in `ls ./outputs/db/filamentous-subset/*db | awk &#39;BEGIN{FS=&quot;.fa&quot;}{print $1}&#39;`
+do
+  anvi-run-hmms -c $i --hmm-profile-dir hmms --just-do-it
+done</code></pre>
+</div>
+<div id="use-the-program-anvi-get-sequences-for-hmm-hits-to-get-sequences-out-of-genomes." class="section level6">
+<h6>4. Use the program anvi-get-sequences-for-hmm-hits to get sequences out of genomes.</h6>
+<p>substitute gene name for all genes for GhoastKOALA</p>
+<pre class="r"><code>anvi-get-sequences-for-hmm-hits --external-genomes external-genomes-filamentous-names.tsv \
+                                --hmm-source hmms \
+                                --gene-names COG2609.faa.final_tree.fa \
+                                -o aceE-12-dna.fasta  
+  
+anvi-get-sequences-for-hmm-hits --external-genomes external-genomes-filamentous-names.tsv \
+                                --hmm-source hmms \
+                                --gene-names COG2609.faa.final_tree.fa \
+                                --get-aa-sequence \
+                                -o cold-genes-aa.fasta  </code></pre>
+</div>
+<div id="get-table-of-hmm-hits" class="section level6">
+<h6>5. Get table of HMM hits</h6>
+<pre class="r"><code>anvi-script-gen-hmm-hits-matrix-across-genomes --external-genomes external-genomes-filamentous-names.tsv \
+                                               --hmm-source hmms \
+                                               -o output.txt</code></pre>
 </div>
 </div>
 </div>
