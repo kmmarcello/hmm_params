@@ -30,16 +30,16 @@ noise_cutoff_terms.txt - E 1e-5, - E 1e-12, -E 1e-20
 Completed - E 1e-30, now testing stringency of noise cutoff  
 HMMs downloaded from EggNOG  
 
-## Genomes used
+### Genomes used
 ***
-### NCBI cyanobacteria whole genome sequences (WGS), filamentous  
+NCBI cyanobacteria whole genome sequences (WGS), filamentous  
 kmrcello@farm:~/cyanobacteria/outputs/db/filamentous-subset  
 
 ### Anvi'o
 hope (v7.1)  
 
-##### Pre analysis - reformat fasta file names:
-###### 1. Convert to an "improved" fasta header, saves file-name-key in a tsv
+### Pre analysis - reformat fasta file names:
+### 1. Convert to an "improved" fasta header, saves file-name-key in a tsv
 
 ```r
 anvi-script-reformat-fasta -c contigs.fa 
@@ -48,7 +48,7 @@ anvi-script-reformat-fasta -c contigs.fa
                            --report-files contigs.tsv
 ```
 
-###### 2. Generate an anvio-ready genome database (.db) and run HMMS  
+### 2. Generate an anvio-ready genome database (.db) and run HMMS  
 
 ```bash
 for i in `ls *fa | awk 'BEGIN{FS=".fa"}{print $1}'`
@@ -57,7 +57,7 @@ do
 done
 ```
 
-###### 3. Run HMMs from our own file
+### 3. Run HMMs from our own file
 
 ```bash
 for i in `ls ./outputs/db/filamentous-subset/*db | awk 'BEGIN{FS=".fa"}{print $1}'`
@@ -66,7 +66,7 @@ do
 done
 ```
 
-###### 4. Use the program anvi-get-sequences-for-hmm-hits to get sequences out of genomes. 
+### 4. Use the program anvi-get-sequences-for-hmm-hits to get sequences out of genomes. 
 substitute gene name for all genes for GhoastKOALA
 
 ```r
@@ -82,7 +82,7 @@ anvi-get-sequences-for-hmm-hits --external-genomes external-genomes-filamentous-
                                 -o aceE-5-aa.fasta  
 ```
 
-###### 5. Get table of HMM hits
+### 5. Get table of HMM hits
 
 ```r
 anvi-script-gen-hmm-hits-matrix-across-genomes --external-genomes external-genomes-filamentous-names.tsv \

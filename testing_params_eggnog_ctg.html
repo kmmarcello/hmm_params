@@ -265,42 +265,42 @@ target.txt - AA:GENE<br />
 noise_cutoff_terms.txt - E 1e-5, - E 1e-12, -E 1e-20</p>
 <p>Completed - E 1e-30, now testing stringency of noise cutoff<br />
 HMMs downloaded from EggNOG</p>
-</div>
-<div id="genomes-used" class="section level2">
-<h2>Genomes used</h2>
+<div id="genomes-used" class="section level3">
+<h3>Genomes used</h3>
 <hr />
-<div id="ncbi-cyanobacteria-whole-genome-sequences-wgs-filamentous" class="section level3">
-<h3>NCBI cyanobacteria whole genome sequences (WGS), filamentous</h3>
-<p><a href="mailto:kmrcello@farm" class="email">kmrcello@farm</a>:~/cyanobacteria/outputs/db/filamentous-subset</p>
+<p>NCBI cyanobacteria whole genome sequences (WGS), filamentous<br />
+<a href="mailto:kmrcello@farm" class="email">kmrcello@farm</a>:~/cyanobacteria/outputs/db/filamentous-subset</p>
 </div>
 <div id="anvio" class="section level3">
 <h3>Anvi’o</h3>
 <p>hope (v7.1)</p>
-<div id="pre-analysis---reformat-fasta-file-names" class="section level5">
-<h5>Pre analysis - reformat fasta file names:</h5>
-<div id="convert-to-an-improved-fasta-header-saves-file-name-key-in-a-tsv" class="section level6">
-<h6>1. Convert to an “improved” fasta header, saves file-name-key in a tsv</h6>
+</div>
+<div id="pre-analysis---reformat-fasta-file-names" class="section level3">
+<h3>Pre analysis - reformat fasta file names:</h3>
+</div>
+<div id="convert-to-an-improved-fasta-header-saves-file-name-key-in-a-tsv" class="section level3">
+<h3>1. Convert to an “improved” fasta header, saves file-name-key in a tsv</h3>
 <pre class="r"><code>anvi-script-reformat-fasta -c contigs.fa 
                            -o contigs-fixed.fa -l 0 
                            --simplify-names 
                            --report-files contigs.tsv</code></pre>
 </div>
-<div id="generate-an-anvio-ready-genome-database-.db-and-run-hmms" class="section level6">
-<h6>2. Generate an anvio-ready genome database (.db) and run HMMS</h6>
+<div id="generate-an-anvio-ready-genome-database-.db-and-run-hmms" class="section level3">
+<h3>2. Generate an anvio-ready genome database (.db) and run HMMS</h3>
 <pre class="bash"><code>for i in `ls *fa | awk &#39;BEGIN{FS=&quot;.fa&quot;}{print $1}&#39;`
 do
   anvi-gen-contigs-database -f $i.fa -o $i.db -T 4
 done</code></pre>
 </div>
-<div id="run-hmms-from-our-own-file" class="section level6">
-<h6>3. Run HMMs from our own file</h6>
+<div id="run-hmms-from-our-own-file" class="section level3">
+<h3>3. Run HMMs from our own file</h3>
 <pre class="bash"><code>for i in `ls ./outputs/db/filamentous-subset/*db | awk &#39;BEGIN{FS=&quot;.fa&quot;}{print $1}&#39;`
 do
   anvi-run-hmms -c $i --hmm-profile-dir hmms --just-do-it
 done</code></pre>
 </div>
-<div id="use-the-program-anvi-get-sequences-for-hmm-hits-to-get-sequences-out-of-genomes." class="section level6">
-<h6>4. Use the program anvi-get-sequences-for-hmm-hits to get sequences out of genomes.</h6>
+<div id="use-the-program-anvi-get-sequences-for-hmm-hits-to-get-sequences-out-of-genomes." class="section level3">
+<h3>4. Use the program anvi-get-sequences-for-hmm-hits to get sequences out of genomes.</h3>
 <p>substitute gene name for all genes for GhoastKOALA</p>
 <pre class="r"><code>anvi-get-sequences-for-hmm-hits --external-genomes external-genomes-filamentous-names.tsv \
                                 --hmm-source hmms \
@@ -313,13 +313,11 @@ anvi-get-sequences-for-hmm-hits --external-genomes external-genomes-filamentous-
                                 --get-aa-sequence \
                                 -o aceE-5-aa.fasta  </code></pre>
 </div>
-<div id="get-table-of-hmm-hits" class="section level6">
-<h6>5. Get table of HMM hits</h6>
+<div id="get-table-of-hmm-hits" class="section level3">
+<h3>5. Get table of HMM hits</h3>
 <pre class="r"><code>anvi-script-gen-hmm-hits-matrix-across-genomes --external-genomes external-genomes-filamentous-names.tsv \
                                                --hmm-source hmms \
                                                -o output-12.txt</code></pre>
-</div>
-</div>
 </div>
 </div>
 </div>
