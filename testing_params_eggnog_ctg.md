@@ -35,29 +35,9 @@ HMMs downloaded from EggNOG
 NCBI cyanobacteria whole genome sequences (WGS), filamentous  
 kmrcello@farm:~/cyanobacteria/outputs/db/filamentous-subset  
 
-### Anvi'o
-hope (v7.1)  
+## CTG various noise cutoff runs
 
-### Pre analysis - reformat fasta file names:
-### 1. Convert to an "improved" fasta header, saves file-name-key in a tsv
-
-```r
-anvi-script-reformat-fasta -c contigs.fa 
-                           -o contigs-fixed.fa -l 0 
-                           --simplify-names 
-                           --report-files contigs.tsv
-```
-
-### 2. Generate an anvio-ready genome database (.db) and run HMMS  
-
-```bash
-for i in `ls *fa | awk 'BEGIN{FS=".fa"}{print $1}'`
-do
-  anvi-gen-contigs-database -f $i.fa -o $i.db -T 4
-done
-```
-
-### 3. Run HMMs from our own file
+### 1. Run HMMs from our own file, anvi-run-hmms
 
 ```bash
 for i in `ls ./outputs/db/filamentous-subset/*db | awk 'BEGIN{FS=".fa"}{print $1}'`
@@ -65,15 +45,16 @@ do
   anvi-run-hmms -c $i --hmm-profile-dir hmms --just-do-it
 done
 ```
+Substitute -E 1e-5 -> -12, -20, (-30?) in hmms > noise_cutoff_terms.txt  
 
-### 4. Use the program anvi-get-sequences-for-hmm-hits to get sequences out of genomes. 
+### 2. Use the program anvi-get-sequences-for-hmm-hits 
 substitute gene name for all genes for GhoastKOALA
 
 ```r
 anvi-get-sequences-for-hmm-hits --external-genomes external-genomes-filamentous-names.tsv \
                                 --hmm-source hmms \
                                 --gene-names COG2609.faa.final_tree.fa \
-                                -o aceE-12-dna.fasta  
+                                -o aceE-5-dna.fasta  
   
 anvi-get-sequences-for-hmm-hits --external-genomes external-genomes-filamentous-names.tsv \
                                 --hmm-source hmms \
@@ -81,14 +62,32 @@ anvi-get-sequences-for-hmm-hits --external-genomes external-genomes-filamentous-
                                 --get-aa-sequence \
                                 -o aceE-5-aa.fasta  
 ```
+Substitute --gene-names for corresponding gene  
+Substitute -o gene-#-aa.fasta  
 
-### 5. Get table of HMM hits
+### 3. Get table of HMM hits
 
 ```r
 anvi-script-gen-hmm-hits-matrix-across-genomes --external-genomes external-genomes-filamentous-names.tsv \
                                                --hmm-source hmms \
-                                               -o output-12.txt
+                                               -o output-5.txt
 ```
 
+## Output files
+output-5.txt  
+output-12.txt  
+output-20.txt  
 
+Genes: aceE, csp, dnaJ, hupB, recA, otsA  
+aceE-5-aa.fasta  
+aceE-5-dna.fasta  
 
+aceE-12-aa.fasta  
+aceE-12-dna.fasta  
+
+aceE-20-aa.fasta  
+aceE-20-dna.fasta  
+
+## Comparing parameters
+[GhoastKOALA](https://www.kegg.jp/ghostkoala/)  
+upload aa fasta files for each gene to compare target hits.
