@@ -285,22 +285,22 @@ done</code></pre>
 <div id="use-the-program-anvi-get-sequences-for-hmm-hits" class="section level3">
 <h3>2. Use the program anvi-get-sequences-for-hmm-hits</h3>
 <p>substitute gene name for all genes for GhostKOALA</p>
-<pre class="r"><code>anvi-get-sequences-for-hmm-hits --external-genomes external-genomes-filamentous-names.tsv \
+<pre class="r"><code>anvi-get-sequences-for-hmm-hits --external-genomes FILAMENTOUS/external-genomes-filamentous-names.tsv \
                                 --hmm-source hmms \
-                                --gene-names COG2609.faa.final_tree.fa \
-                                -o aceE-12-dna.fasta  
+                                --gene-names COG0532.faa.final_tree.fa \
+                                -o test-params/infB-20-dna.fasta  
   
-anvi-get-sequences-for-hmm-hits --external-genomes external-genomes-filamentous-names.tsv \
+anvi-get-sequences-for-hmm-hits --external-genomes FILAMENTOUS/external-genomes-filamentous-names.tsv \
                                 --hmm-source hmms \
-                                --gene-names COG2609.faa.final_tree.fa \
+                                --gene-names COG0532.faa.final_tree.fa \
                                 --get-aa-sequence \
-                                -o aceE-12-aa.fasta  </code></pre>
+                                -o test-params/infB-20-aa.fasta  </code></pre>
 <p>Substitute –gene-names for corresponding gene<br />
-Substitute -o gene-#-aa.fasta</p>
+Substitute -o gene-#-aa.fasta (figure out a way to do a loop with this)</p>
 </div>
 <div id="get-table-of-hmm-hits" class="section level3">
 <h3>3. Get table of HMM hits</h3>
-<pre class="r"><code>anvi-script-gen-hmm-hits-matrix-across-genomes --external-genomes external-genomes-filamentous-names.tsv \
+<pre class="r"><code>anvi-script-gen-hmm-hits-matrix-across-genomes --external-genomes FILAMENTOUS/external-genomes-filamentous-names.tsv \
                                                --hmm-source hmms \
                                                -o output-5.txt</code></pre>
 </div>

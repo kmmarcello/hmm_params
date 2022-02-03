@@ -51,24 +51,25 @@ Substitute -E 1e-5 -> -12, -20, (-30?) in hmms > noise_cutoff_terms.txt
 substitute gene name for all genes for GhostKOALA
 
 ```r
-anvi-get-sequences-for-hmm-hits --external-genomes external-genomes-filamentous-names.tsv \
+anvi-get-sequences-for-hmm-hits --external-genomes FILAMENTOUS/external-genomes-filamentous-names.tsv \
                                 --hmm-source hmms \
-                                --gene-names COG2609.faa.final_tree.fa \
-                                -o aceE-12-dna.fasta  
+                                --gene-names COG0532.faa.final_tree.fa \
+                                -o test-params/infB-20-dna.fasta  
   
-anvi-get-sequences-for-hmm-hits --external-genomes external-genomes-filamentous-names.tsv \
+anvi-get-sequences-for-hmm-hits --external-genomes FILAMENTOUS/external-genomes-filamentous-names.tsv \
                                 --hmm-source hmms \
-                                --gene-names COG2609.faa.final_tree.fa \
+                                --gene-names COG0532.faa.final_tree.fa \
                                 --get-aa-sequence \
-                                -o aceE-12-aa.fasta  
+                                -o test-params/infB-20-aa.fasta  
 ```
 Substitute --gene-names for corresponding gene  
-Substitute -o gene-#-aa.fasta  
+Substitute -o gene-#-aa.fasta 
+(figure out a way to do a loop with this)
 
 ### 3. Get table of HMM hits
 
 ```r
-anvi-script-gen-hmm-hits-matrix-across-genomes --external-genomes external-genomes-filamentous-names.tsv \
+anvi-script-gen-hmm-hits-matrix-across-genomes --external-genomes FILAMENTOUS/external-genomes-filamentous-names.tsv \
                                                --hmm-source hmms \
                                                -o output-5.txt
 ```

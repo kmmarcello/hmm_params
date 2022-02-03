@@ -10,7 +10,8 @@ output:
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 ```
-These are the websites and workflows I used:
+
+Websites and workflows used:
 
 [Anvio phylogenomics workflow](https://merenlab.org/2017/06/07/phylogenomics/)  
 [Making your own HMM database](https://merenlab.org/2016/05/21/archaeal-single-copy-genes/)  
@@ -38,7 +39,7 @@ anvi-script-reformat-fasta -c contigs.fa
                            --report-files contigs.tsv
 ```
 
-### 2. Generate an anvio-ready genome database (.db) and run HMMS  
+### 2. Generate an anvio-ready genome database (.db)  
 ```{bash eval=FALSE}
 for i in `ls *fa | awk 'BEGIN{FS=".fa"}{print $1}'`
 do
@@ -46,4 +47,10 @@ do
 done
 ```  
 
-
+### 3. Run HMMs from our own file, anvi-run-hmms
+```{bash eval=FALSE}
+for i in `ls ./outputs/db/filamentous-subset/*db | awk 'BEGIN{FS=".fa"}{print $1}'`
+do
+  anvi-run-hmms -c $i --hmm-profile-dir hmms --just-do-it
+done
+``` 

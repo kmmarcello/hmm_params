@@ -8,7 +8,8 @@ output:
 ---
 
 
-These are the websites and workflows I used:
+
+Websites and workflows used:
 
 [Anvio phylogenomics workflow](https://merenlab.org/2017/06/07/phylogenomics/)  
 [Making your own HMM database](https://merenlab.org/2016/05/21/archaeal-single-copy-genes/)  
@@ -37,7 +38,7 @@ anvi-script-reformat-fasta -c contigs.fa
                            --report-files contigs.tsv
 ```
 
-### 2. Generate an anvio-ready genome database (.db) and run HMMS  
+### 2. Generate an anvio-ready genome database (.db)  
 
 ```bash
 for i in `ls *fa | awk 'BEGIN{FS=".fa"}{print $1}'`
@@ -45,31 +46,12 @@ do
   anvi-gen-contigs-database -f $i.fa -o $i.db -T 4
 done
 ```
-## R Markdown
 
-This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+### 3. Run HMMs from our own file, anvi-run-hmms
 
-When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
-
-
-```r
-summary(cars)
+```bash
+for i in `ls ./outputs/db/filamentous-subset/*db | awk 'BEGIN{FS=".fa"}{print $1}'`
+do
+  anvi-run-hmms -c $i --hmm-profile-dir hmms --just-do-it
+done
 ```
-
-```
-##      speed           dist       
-##  Min.   : 4.0   Min.   :  2.00  
-##  1st Qu.:12.0   1st Qu.: 26.00  
-##  Median :15.0   Median : 36.00  
-##  Mean   :15.4   Mean   : 42.98  
-##  3rd Qu.:19.0   3rd Qu.: 56.00  
-##  Max.   :25.0   Max.   :120.00
-```
-
-## Including Plots
-
-You can also embed plots, for example:
-
-![](anvio-phylo-workflow_files/figure-html/pressure-1.png)<!-- -->
-
-Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
