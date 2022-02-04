@@ -38,17 +38,19 @@ kmrcello@farm:~/cyanobacteria/outputs/db/filamentous-subset
 ## CTG various noise cutoff runs
 
 ### 1. Run HMMs from our own file, anvi-run-hmms
-```{bash eval=FALSE}
+
+```bash
 for i in `ls ./outputs/db/filamentous-subset/*db | awk 'BEGIN{FS=".fa"}{print $1}'`
 do
   anvi-run-hmms -c $i --hmm-profile-dir hmms --just-do-it
 done
-```  
+```
 Substitute -E 1e-5 -> -12, -20, (-30?) in hmms > noise_cutoff_terms.txt  
 
 ### 2. Use the program anvi-get-sequences-for-hmm-hits 
 substitute gene name for all genes for GhostKOALA
-```{r eval=FALSE}
+
+```r
 anvi-get-sequences-for-hmm-hits --external-genomes FILAMENTOUS/external-genomes-filamentous-names.tsv \
                                 --hmm-source hmms \
                                 --gene-names COG1278.faa.final_tree.fa \
@@ -59,13 +61,26 @@ anvi-get-sequences-for-hmm-hits --external-genomes FILAMENTOUS/external-genomes-
                                 --gene-names COG1278.faa.final_tree.fa \
                                 --get-aa-sequence \
                                 -o test-params/csp-5-aa.fasta  
-```  
+```
 Substitute --gene-names for corresponding gene  
 Substitute -o gene-#-aa.fasta 
-(figure out a way to do a loop with this)
+
+loop from [Anvi'o addition to anvi-get-sequences-for-hmm-hits](https://anvio.org/help/main/programs/anvi-get-sequences-for-hmm-hits/)
+
+```r
+for gene in $genes
+do
+    anvi-get-sequences-for-hmm-hits --external-genomes FILAMENTOUS/external-genomes-filamentous-names.tsv \
+                                    --hmm-source hmms \
+                                    --gene-name $gene \
+                                    -o cold-gene-hmm-hits.fa/${gene}
+done
+```
+
 
 ### 3. Get table of HMM hits
-```{r eval=FALSE}
+
+```r
 anvi-script-gen-hmm-hits-matrix-across-genomes --external-genomes FILAMENTOUS/external-genomes-filamentous-names.tsv \
                                                --hmm-source hmms \
                                                -o output-5.txt
