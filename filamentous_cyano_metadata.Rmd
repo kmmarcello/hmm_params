@@ -18,7 +18,7 @@ library(here)
 ```
 
 ```{r}
-filament_cyanos <- readr::read_csv("filamentous_cyano_meta.csv")
+filament_cyanos <- readr::read_csv("data/filamentous_cyano_meta.csv")
 ```
 
 ```{r}
@@ -30,7 +30,6 @@ summary(filament_cyanos)
 ```
 
 ```{r}
-filament_cyanos %>% 
-  pivot_longer(names_to = )
+
 ```
 
