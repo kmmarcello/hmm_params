@@ -7,8 +7,9 @@ print(dna)
 from Bio import SeqIO
 from Bio.SeqUtils.ProtParam import ProteinAnalysis
 
-for sequence in SeqIO.parse("desA-concat-filamentous.fa", "fasta"):
-    print(sequence.id)
-    xSeq = ProteinAnalysis(sequence.seq)
-    print(xSeq.count_amino_acids()['A']) 
+for gene in SeqIO.parse("desA-concat-filamentous.fa", "fasta"):
+    X = ProteinAnalysis("desA-concat-filamentous.fa", "fasta")
+    print(gene.id)
+    print("Sequence length %i" % len(gene))
+    
     
