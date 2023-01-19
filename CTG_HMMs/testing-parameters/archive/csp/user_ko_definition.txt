@@ -1,0 +1,19 @@
+COG1278.faa.final_tree.fa___hmms___c63319f685a646031c35f478c4f270e3bf984727c52fc2ed897e4b8f			197		
+COG1278.faa.final_tree.fa___hmms___d9440e16689119f52b39905a023cd904b7d627408d7cef0a9aac4e43			197		
+COG1278.faa.final_tree.fa___hmms___3a436254c12a58ae305f0b8b7b11d75c634e336c13cefe5799a44c6e			189		
+COG1278.faa.final_tree.fa___hmms___d3c0ac9c01a40ae65bd786df472f81b5ec1e99c6fae4aac2d82b195f			262		
+COG1278.faa.final_tree.fa___hmms___81a2f7f8f8321da86b4c969a2f0d2e2b20d196154652c675418964be			189		
+COG1278.faa.final_tree.fa___hmms___74301ec7a5b984762915c1aff481fad3b3592c67d987bc7f21adf683			189		
+COG1278.faa.final_tree.fa___hmms___0633f71791e6bd8892c4ba6ac7a13e098f8b42265f4540f8102ad0b1			193		
+COG1278.faa.final_tree.fa___hmms___37493bd0fc2b0dc731fe021a483347a91e05863c34353ab19bb13b80			193		
+COG1278.faa.final_tree.fa___hmms___9427968d1b50c2be46317e8f98d647b7957c9a1408c65560ccd0daa3			193		
+COG1278.faa.final_tree.fa___hmms___245f46035e7b9bc193301b2d608876c73af8c06dd2e8048e382debf3			207		
+COG1278.faa.final_tree.fa___hmms___f9e2649ef1acb5211b8f74db224ebc3a28d8cb3feb21eefc0a116bf5	K03704	cspA; cold shock protein	116		
+COG1278.faa.final_tree.fa___hmms___9be3ff7470e66b551fc14aa85c7522bc91c4106b0131e3cbc29c7906			181		
+COG1278.faa.final_tree.fa___hmms___20b325ce9bc91464cbc853d199105fa9b0a7b2f00553234161d1d8e9			195		
+COG1278.faa.final_tree.fa___hmms___bf24116c2921ee392a1117b480b5e103dc0fc2b8ec7e443234f22a77			155		
+COG1278.faa.final_tree.fa___hmms___bbeccdacf6612c27ddbbc031b74dee16569a30c31026a90ed2799d87			263		
+COG1278.faa.final_tree.fa___hmms___0dcb65ab997a4d7f210a5015b61aa8d7e24489cd92783562f7c96a82			196		
+COG1278.faa.final_tree.fa___hmms___946efd113c0b368abdd79949c4af3900edf5bd26c347c167b56e48c4			279		
+COG1278.faa.final_tree.fa___hmms___8db3472d7c4508f26b276f7041e8728be3641a0bf2821769ea919fd5					
+COG1278.faa.final_tree.fa___hmms___a6506225e31055e1c2dd2073f0d2911365c2ce129bd50719bb9e5870			182		

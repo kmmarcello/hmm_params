@@ -1,0 +1,117 @@
+COG2609.faa.final_tree.fa___hmms___a73e80d9df58d209dd83dfa80beaf17c3de210eca7898930d6094442	K01662	dxs; 1-deoxy-D-xylulose-5-phosphate synthase [EC:2.2.1.7]	1170		
+COG2609.faa.final_tree.fa___hmms___9cc70fff1707c1052f463513837dbfebc0aecb88ba6bfd11be362eac	K00615	E2.2.1.1, tktA, tktB; transketolase [EC:2.2.1.1]	937		
+COG2609.faa.final_tree.fa___hmms___b80352e9c33b7ab6b8db3fb1956bd8df947cff2b918263ec1866bc89			1339		
+COG2609.faa.final_tree.fa___hmms___2a375422d504bc0d1447c4669da82a12760911c502d51768e5c0e11e	K00615	E2.2.1.1, tktA, tktB; transketolase [EC:2.2.1.1]	1213		
+COG2609.faa.final_tree.fa___hmms___be9037a0bd8dc427ae088ee59fcffc6e3a5106ed14be51cddfbc7e6b	K01621	xfp, xpk; xylulose-5-phosphate/fructose-6-phosphate phosphoketolase [EC:4.1.2.9 4.1.2.22]	1523		
+COG2609.faa.final_tree.fa___hmms___e8c3b558726f1eb70bb20cb219f09b9f2afa054668baf2254a412d26	K01662	dxs; 1-deoxy-D-xylulose-5-phosphate synthase [EC:2.2.1.7]	1185		
+COG2609.faa.final_tree.fa___hmms___076c843095e6b84bfceb1ed8ac8fdb71e640f1bde25826f9deb624dc	K00615	E2.2.1.1, tktA, tktB; transketolase [EC:2.2.1.1]	1216		
+COG2609.faa.final_tree.fa___hmms___938d710b54d7952e66b84f5de66db84decb39d44f6b726f157e07736	K01621	xfp, xpk; xylulose-5-phosphate/fructose-6-phosphate phosphoketolase [EC:4.1.2.9 4.1.2.22]	1517		
+COG2609.faa.final_tree.fa___hmms___73c9a9a91b00678f4d33a9b6cc819d5fd43b0f9415fe4a9122b515ef	K01662	dxs; 1-deoxy-D-xylulose-5-phosphate synthase [EC:2.2.1.7]	1163		
+COG2609.faa.final_tree.fa___hmms___6438449daaf69b5c4b44018419749d4407ec88de36d6323720157d2d	K00615	E2.2.1.1, tktA, tktB; transketolase [EC:2.2.1.1]	1217		
+COG2609.faa.final_tree.fa___hmms___a5f7922a8fc218bf82a04ace0e89df56ac20b8933da7ed21018b03ce	K00615	E2.2.1.1, tktA, tktB; transketolase [EC:2.2.1.1]	973		
+COG2609.faa.final_tree.fa___hmms___4c1027521c96d5df35b99a3c77dcadb587c372d8c9a8eacc8908d496	K01662	dxs; 1-deoxy-D-xylulose-5-phosphate synthase [EC:2.2.1.7]	1182		
+COG2609.faa.final_tree.fa___hmms___7b8285e8fdc040e51413607e872c510e2b3238d8abcd4139bd4b9a80	K00615	E2.2.1.1, tktA, tktB; transketolase [EC:2.2.1.1]	1229		
+COG2609.faa.final_tree.fa___hmms___976ebf72b853fe7ac478782a8d1d7ef2507884d6c54959329f0af83b	K01662	dxs; 1-deoxy-D-xylulose-5-phosphate synthase [EC:2.2.1.7]	1153		
+COG2609.faa.final_tree.fa___hmms___c79224c41e4aa395bee1a813aed71270528b611fe2362920fae8d595	K00615	E2.2.1.1, tktA, tktB; transketolase [EC:2.2.1.1]	952		
+COG2609.faa.final_tree.fa___hmms___daa1b862b6e5253a8d1a5831ff17a1a35861b69038312c151b5a981f	K01621	xfp, xpk; xylulose-5-phosphate/fructose-6-phosphate phosphoketolase [EC:4.1.2.9 4.1.2.22]	1506		
+COG2609.faa.final_tree.fa___hmms___579e01deff9fc4718f4ac15056b08aad5f236610aba3254c4b7c6f75			1308		
+COG2609.faa.final_tree.fa___hmms___c4c4efa2a1cde061a9051d9c7921f07d0a8a9aa618b35c0dd47c2591	K00615	E2.2.1.1, tktA, tktB; transketolase [EC:2.2.1.1]	1230		
+COG2609.faa.final_tree.fa___hmms___87e0b8bae171807259d088bd711847b6984927d7a7ed25718ea5bf2c	K00615	E2.2.1.1, tktA, tktB; transketolase [EC:2.2.1.1]	370		
+COG2609.faa.final_tree.fa___hmms___f750efc63acbda2dd30979cf9872863564c78bb78b207aec9d45a025	K00615	E2.2.1.1, tktA, tktB; transketolase [EC:2.2.1.1]	309		
+COG2609.faa.final_tree.fa___hmms___690f91c65dfd718f3e92c7bd1d2eb55280a2ed69bca2b5f3775a011c	K01662	dxs; 1-deoxy-D-xylulose-5-phosphate synthase [EC:2.2.1.7]	766		
+COG2609.faa.final_tree.fa___hmms___9c477e22bd978dbe06d439f0842c621c7543f547b84eb8598065db0a	K01662	dxs; 1-deoxy-D-xylulose-5-phosphate synthase [EC:2.2.1.7]	1186		
+COG2609.faa.final_tree.fa___hmms___e6c54577906f16cad9ffcae0bf774a841ce062a71b2e1508edf5bad1	K01621	xfp, xpk; xylulose-5-phosphate/fructose-6-phosphate phosphoketolase [EC:4.1.2.9 4.1.2.22]	1524		
+COG2609.faa.final_tree.fa___hmms___20398044fb156ad72130efd9ab9e65d11cb32e99b2ffd8ddad36bca4	K00615	E2.2.1.1, tktA, tktB; transketolase [EC:2.2.1.1]	1219		
+COG2609.faa.final_tree.fa___hmms___c8cf241fca6b6e4c295b83642c8c62ad701c09d8b9f8dec125f30e54	K01662	dxs; 1-deoxy-D-xylulose-5-phosphate synthase [EC:2.2.1.7]	1186		
+COG2609.faa.final_tree.fa___hmms___7596b9ed712c669a2ea14f0929b2b870dd3e16765f607426a1dbfa06	K00615	E2.2.1.1, tktA, tktB; transketolase [EC:2.2.1.1]	1221		
+COG2609.faa.final_tree.fa___hmms___2e50eb2ab870cfee30d913d6689998f02fb6bd69396feaf17f1df260	K01621	xfp, xpk; xylulose-5-phosphate/fructose-6-phosphate phosphoketolase [EC:4.1.2.9 4.1.2.22]	1526		
+COG2609.faa.final_tree.fa___hmms___40e39465fa3a721484e2d83ef7e6e7af3e1d8f3fd2ea935f82bf3309	K00615	E2.2.1.1, tktA, tktB; transketolase [EC:2.2.1.1]	867		
+COG2609.faa.final_tree.fa___hmms___3c18387bc0b472bc8ed41be674db74da7739dbdd358932902845481f	K01621	xfp, xpk; xylulose-5-phosphate/fructose-6-phosphate phosphoketolase [EC:4.1.2.9 4.1.2.22]	1359		
+COG2609.faa.final_tree.fa___hmms___833401ad607255733cf7c29516298669d36f5c4d0faa85563ac8a708	K01662	dxs; 1-deoxy-D-xylulose-5-phosphate synthase [EC:2.2.1.7]	906		
+COG2609.faa.final_tree.fa___hmms___216e0542d1ed4b33108b1d59adc5733b8eafd7d3e77465ac79e26c04	K01662	dxs; 1-deoxy-D-xylulose-5-phosphate synthase [EC:2.2.1.7]	1091		
+COG2609.faa.final_tree.fa___hmms___b19342cd6789dc037d7209ff01c5fad9b8d0133fd9da9c70a92e5aad			1211		
+COG2609.faa.final_tree.fa___hmms___144092448f8d6c7fa6326b756ff5b53331a5827b96286fd31cbe017f	K00615	E2.2.1.1, tktA, tktB; transketolase [EC:2.2.1.1]	1065		
+COG2609.faa.final_tree.fa___hmms___865801445a748bd24c0daf07959cea3977a3c457f65090685d0e86cf	K01662	dxs; 1-deoxy-D-xylulose-5-phosphate synthase [EC:2.2.1.7]	1091		
+COG2609.faa.final_tree.fa___hmms___a0e1169ccb49847d14da28c07642db024a3512e1b3428aeb07c55bcb			1211		
+COG2609.faa.final_tree.fa___hmms___e9256a3a2cd913cb4dc947383282fdd65b787b469d91ae85a17300cb	K00615	E2.2.1.1, tktA, tktB; transketolase [EC:2.2.1.1]	1065		
+COG2609.faa.final_tree.fa___hmms___24c18e2b1f7b162a488ea036d20a80e443d1537222aa15ca23600bb2	K00615	E2.2.1.1, tktA, tktB; transketolase [EC:2.2.1.1]	1065		
+COG2609.faa.final_tree.fa___hmms___7de2f2e363ea87ba88800eb9d38e9ae41f9a4c7dc4aba7210501a65b			1211		
+COG2609.faa.final_tree.fa___hmms___eaec9bee8bfce342bc19a2b837a2b77b59bf01f83310987b588a3e8a	K01662	dxs; 1-deoxy-D-xylulose-5-phosphate synthase [EC:2.2.1.7]	1091		
+COG2609.faa.final_tree.fa___hmms___4aaad9460c10b7151f2d8354c01f27b223c5ae932d38bdf9bf6f3ba2	K00615	E2.2.1.1, tktA, tktB; transketolase [EC:2.2.1.1]	1075		
+COG2609.faa.final_tree.fa___hmms___2749ae627db8e7ab7682a7c301e2e77701ec0bfd9c0bcfd22b7eb1f5	K01662	dxs; 1-deoxy-D-xylulose-5-phosphate synthase [EC:2.2.1.7]	1083		
+COG2609.faa.final_tree.fa___hmms___8b806bf7b66f31d0537e249823cc3f1dcd8158e91f73cc622d2033cf	K01621	xfp, xpk; xylulose-5-phosphate/fructose-6-phosphate phosphoketolase [EC:4.1.2.9 4.1.2.22]	1359		
+COG2609.faa.final_tree.fa___hmms___2e94a0e496cf006ea7c175e0d70a11ec9872acc40180de231f1faed2			1230		
+COG2609.faa.final_tree.fa___hmms___1b73324fea0450d7b40cb0a2a867a79323cb7ebb67918103e81fe57e	K00615	E2.2.1.1, tktA, tktB; transketolase [EC:2.2.1.1]	1169		
+COG2609.faa.final_tree.fa___hmms___a62185b4005f0817ac1be83a22470cb91c6043b35c62851411cc94e1	K01662	dxs; 1-deoxy-D-xylulose-5-phosphate synthase [EC:2.2.1.7]	1119		
+COG2609.faa.final_tree.fa___hmms___1de9385bd923c6f12466ba3041284bff7605dd19a5d7686b5925f864	K00615	E2.2.1.1, tktA, tktB; transketolase [EC:2.2.1.1]	1067		
+COG2609.faa.final_tree.fa___hmms___b0a6240eb22e004bd4d46f7ca518e444605d8823a86d2f19d071e940	K01662	dxs; 1-deoxy-D-xylulose-5-phosphate synthase [EC:2.2.1.7]	1080		
+COG2609.faa.final_tree.fa___hmms___e0de76f452bde50fdbdd3f2366b7bf1d549e0317d2e2dfeed0c9c341	K00615	E2.2.1.1, tktA, tktB; transketolase [EC:2.2.1.1]	1151		
+COG2609.faa.final_tree.fa___hmms___070d0d6a6e6c373c4180f35d3d572f5eaa2afdb94660870681b68ad0			1269		
+COG2609.faa.final_tree.fa___hmms___d436f2873d068e33afcbcd910c7c49b6a4986ccea8ade0014c8d3f8d	K01662	dxs; 1-deoxy-D-xylulose-5-phosphate synthase [EC:2.2.1.7]	1118		
+COG2609.faa.final_tree.fa___hmms___07b7d63d67361a2edbc150f20bf46809184702e68f7e34565a115c7c	K00615	E2.2.1.1, tktA, tktB; transketolase [EC:2.2.1.1]	939		
+COG2609.faa.final_tree.fa___hmms___e15dfe39ebaf063008222d5bf8d8aa7c43263771d5cae61fd3cde855	K00615	E2.2.1.1, tktA, tktB; transketolase [EC:2.2.1.1]	1202		
+COG2609.faa.final_tree.fa___hmms___f22afa48dbfda59e5ced3c3b3317030670a8a12a5296e668b5b2e9dd	K01662	dxs; 1-deoxy-D-xylulose-5-phosphate synthase [EC:2.2.1.7]	1153		
+COG2609.faa.final_tree.fa___hmms___8c32a320c40b83431f00361fd6a493c17bcdd3124d7cb25bd5074859	K01662	dxs; 1-deoxy-D-xylulose-5-phosphate synthase [EC:2.2.1.7]	1149		
+COG2609.faa.final_tree.fa___hmms___351f3251768817fe9531fad6e387f4095283a9173ca1fc1cf3193504	K00615	E2.2.1.1, tktA, tktB; transketolase [EC:2.2.1.1]	1228		
+COG2609.faa.final_tree.fa___hmms___87adf52f34fa4d161cea1a344263493cf2fe47ac9f78e1bba35053f2	K01621	xfp, xpk; xylulose-5-phosphate/fructose-6-phosphate phosphoketolase [EC:4.1.2.9 4.1.2.22]	1486		
+COG2609.faa.final_tree.fa___hmms___a0d51c477a2dd98cf07d08512f812cc43cee3bbaad713182489df0fc	K01662	dxs; 1-deoxy-D-xylulose-5-phosphate synthase [EC:2.2.1.7]	1151		
+COG2609.faa.final_tree.fa___hmms___44ed21c409c85964c3c1b10d6a7d5d30021d512f4887cbdc9172781e	K01621	xfp, xpk; xylulose-5-phosphate/fructose-6-phosphate phosphoketolase [EC:4.1.2.9 4.1.2.22]	1492		
+COG2609.faa.final_tree.fa___hmms___51f5213fe460070cb6da19c8fca3c287ef3b38fed06baa8393cfede7	K00615	E2.2.1.1, tktA, tktB; transketolase [EC:2.2.1.1]	1211		
+COG2609.faa.final_tree.fa___hmms___e608b33577cbffd931d278e83653eb99eb3a0cb6134aa14e4134e819	K00615	E2.2.1.1, tktA, tktB; transketolase [EC:2.2.1.1]	1211		
+COG2609.faa.final_tree.fa___hmms___9ddeef09abfa7fd3a10bd7c40c22cfe1ebc6e5aa8b91842974b13119	K01662	dxs; 1-deoxy-D-xylulose-5-phosphate synthase [EC:2.2.1.7]	1162		
+COG2609.faa.final_tree.fa___hmms___7122b4b85c546ec8c738bffbfb1317f15692e3f0e2a1fdec289e75ec	K01662	dxs; 1-deoxy-D-xylulose-5-phosphate synthase [EC:2.2.1.7]	1163		
+COG2609.faa.final_tree.fa___hmms___e456eaff291a7f86aa3075a8e9fb2ce1ca955581275731eb5a1a2961	K00615	E2.2.1.1, tktA, tktB; transketolase [EC:2.2.1.1]	1212		
+COG2609.faa.final_tree.fa___hmms___45b417f9df101510ee61f190fd2f07f50993ccc194c1487b5c64d4eb	K01621	xfp, xpk; xylulose-5-phosphate/fructose-6-phosphate phosphoketolase [EC:4.1.2.9 4.1.2.22]	1477		
+COG2609.faa.final_tree.fa___hmms___6ad3c7f2ccf36ef58965f565c521a8fd7a024e4ae53b03c9e250a802	K00615	E2.2.1.1, tktA, tktB; transketolase [EC:2.2.1.1]	1178		
+COG2609.faa.final_tree.fa___hmms___034a68fe63c6849fbd179735e295337d75e48b8229a78a9df6ef05f5	K01662	dxs; 1-deoxy-D-xylulose-5-phosphate synthase [EC:2.2.1.7]	1162		
+COG2609.faa.final_tree.fa___hmms___9ba23ecc370c2526a6d4cdab20de8da9588c53834c576d3a7206a474	K01662	dxs; 1-deoxy-D-xylulose-5-phosphate synthase [EC:2.2.1.7]	1163		
+COG2609.faa.final_tree.fa___hmms___f7f1d9538add3b8f7c36450a0584c8062454195bdd05d4502b61f970	K00615	E2.2.1.1, tktA, tktB; transketolase [EC:2.2.1.1]	1211		
+COG2609.faa.final_tree.fa___hmms___b8a1ffa2672404c4fdd8e28a15d27bed3a2d50e4a9b01155ddd587da	K01621	xfp, xpk; xylulose-5-phosphate/fructose-6-phosphate phosphoketolase [EC:4.1.2.9 4.1.2.22]	1476		
+COG2609.faa.final_tree.fa___hmms___700ea51d993f08d9b72fddc663ddc9ad3c380ac41b3abcfcf565bda5	K01662	dxs; 1-deoxy-D-xylulose-5-phosphate synthase [EC:2.2.1.7]	1164		
+COG2609.faa.final_tree.fa___hmms___36868e9fc44064e1c2716e45e1343bfa3b39ad78cdc48835574bb1ef	K00615	E2.2.1.1, tktA, tktB; transketolase [EC:2.2.1.1]	945		
+COG2609.faa.final_tree.fa___hmms___82f4cb5acdb09dfe7cfd6bca26ada615530d03b3f16b09d10ab6ed96	K00615	E2.2.1.1, tktA, tktB; transketolase [EC:2.2.1.1]	1220		
+COG2609.faa.final_tree.fa___hmms___6f0899bdef14610f6b75cad5fd9d14ea3aed55831dfc820046a04b38	K00615	E2.2.1.1, tktA, tktB; transketolase [EC:2.2.1.1]	1203		
+COG2609.faa.final_tree.fa___hmms___b92a2e5ea8f9863cbc560260d3a5ed745a50261487d307e67328be89	K01662	dxs; 1-deoxy-D-xylulose-5-phosphate synthase [EC:2.2.1.7]	1149		
+COG2609.faa.final_tree.fa___hmms___0962a59796cc9cb49f0dfdcd85dc3686425e406078c426c09fedca06	K01621	xfp, xpk; xylulose-5-phosphate/fructose-6-phosphate phosphoketolase [EC:4.1.2.9 4.1.2.22]	1469		
+COG2609.faa.final_tree.fa___hmms___bc5800963b2ebc59fc789e06541938e064deefbf4a88fda45138de1b	K01662	dxs; 1-deoxy-D-xylulose-5-phosphate synthase [EC:2.2.1.7]	1067		
+COG2609.faa.final_tree.fa___hmms___ae4efa9d0097b92f20e977cfe36b984eaf6822099bca721a93b3e638	K01621	xfp, xpk; xylulose-5-phosphate/fructose-6-phosphate phosphoketolase [EC:4.1.2.9 4.1.2.22]	1469		
+COG2609.faa.final_tree.fa___hmms___e8e5dd6713d653f8bd1661a9e988095af35078720261ee942480995c	K01662	dxs; 1-deoxy-D-xylulose-5-phosphate synthase [EC:2.2.1.7]	1152		
+COG2609.faa.final_tree.fa___hmms___c18c49589fef87568e8764ce0b16ccd5da4be9c6abf5c8d75fa1d1ba	K00615	E2.2.1.1, tktA, tktB; transketolase [EC:2.2.1.1]	1206		
+COG2609.faa.final_tree.fa___hmms___529eae3499a992e795e27d7a6f6ddfef02dcb2af80d8f25cd5381ce5	K00615	E2.2.1.1, tktA, tktB; transketolase [EC:2.2.1.1]	1206		
+COG2609.faa.final_tree.fa___hmms___51fd3e3febd7d0c213fe37806dc61d988f699159d1353be7de01cd5f	K00615	E2.2.1.1, tktA, tktB; transketolase [EC:2.2.1.1]	901		
+COG2609.faa.final_tree.fa___hmms___9a45fa44ed084c171bfb6c4830312e26eba208da715454db9d4158a2	K01662	dxs; 1-deoxy-D-xylulose-5-phosphate synthase [EC:2.2.1.7]	1162		
+COG2609.faa.final_tree.fa___hmms___e341d5cb665a69ced53efc97dc700daa2088c203047188ffa967429d	K01662	dxs; 1-deoxy-D-xylulose-5-phosphate synthase [EC:2.2.1.7]	1158		
+COG2609.faa.final_tree.fa___hmms___d488c67a3528e900518149f2b7d60780c2f403949665301aeaebeb7c	K00615	E2.2.1.1, tktA, tktB; transketolase [EC:2.2.1.1]	1204		
+COG2609.faa.final_tree.fa___hmms___b693ef211a8aac738dfe8aa0f5d36a66165f43e2722da8b1f7b51c64			1323		
+COG2609.faa.final_tree.fa___hmms___2cc4cf5d9252160f97b0592710eb31acf380e39d18ad1242396228fe	K01662	dxs; 1-deoxy-D-xylulose-5-phosphate synthase [EC:2.2.1.7]	1180		
+COG2609.faa.final_tree.fa___hmms___bd7f563bf1dad39ff11d2395255a9ce87387d08220e28719c29f5700	K00615	E2.2.1.1, tktA, tktB; transketolase [EC:2.2.1.1]	1234		
+COG2609.faa.final_tree.fa___hmms___aeb6521634e420f132692e2991615da4bba4add003c06b6dd5a27338	K00615	E2.2.1.1, tktA, tktB; transketolase [EC:2.2.1.1]	987		
+COG2609.faa.final_tree.fa___hmms___2f5b588e89fa3f63408e27fdd42de0d9ea904996af3e9299de7665c3	K00615	E2.2.1.1, tktA, tktB; transketolase [EC:2.2.1.1]	924		
+COG2609.faa.final_tree.fa___hmms___3790e80308acea54ed363d1a0041c14f7502f2c3b2156c25cf59ae7d			1340		
+COG2609.faa.final_tree.fa___hmms___a2c73ba828943a478fa1f583a4cf90c2674bd1ef748c9e1efebc9730	K01662	dxs; 1-deoxy-D-xylulose-5-phosphate synthase [EC:2.2.1.7]	1160		
+COG2609.faa.final_tree.fa___hmms___8fa8783eb37bc12ca609dbcadb65cf0d77805350580d48d407ac040d	K00615	E2.2.1.1, tktA, tktB; transketolase [EC:2.2.1.1]	1218		
+COG2609.faa.final_tree.fa___hmms___e9b9dfed50f1faa9b84eba8cf6d9e1e16a387d96b82d735c15e9a094	K00615	E2.2.1.1, tktA, tktB; transketolase [EC:2.2.1.1]	1215		
+COG2609.faa.final_tree.fa___hmms___a47ae539bfd2901edc0c85e937fab39a3199ff509631ef9f8f9bbae8	K01662	dxs; 1-deoxy-D-xylulose-5-phosphate synthase [EC:2.2.1.7]	1149		
+COG2609.faa.final_tree.fa___hmms___f33bb3d210f727bde422295495396d0e6b790d30761effdafdbb80c2	K01662	dxs; 1-deoxy-D-xylulose-5-phosphate synthase [EC:2.2.1.7]	1152		
+COG2609.faa.final_tree.fa___hmms___1bbf797dfbbd5ca8cda79a2b763387698ba4ede1a0235902b037e09b	K00615	E2.2.1.1, tktA, tktB; transketolase [EC:2.2.1.1]	213		
+COG2609.faa.final_tree.fa___hmms___952a586ba60ddade1d3a3a92453a5c3d89ff1bd685e5cf001bb13c53	K01621	xfp, xpk; xylulose-5-phosphate/fructose-6-phosphate phosphoketolase [EC:4.1.2.9 4.1.2.22]	1473		
+COG2609.faa.final_tree.fa___hmms___b44c1796b1049adbe227f91bbd72603762a822ec2d9781a0d7be1455	K00615	E2.2.1.1, tktA, tktB; transketolase [EC:2.2.1.1]	1210		
+COG2609.faa.final_tree.fa___hmms___80c731e877088ad6de52cb9338bd8dc5863396fb93e346abd0d5dfe0	K01662	dxs; 1-deoxy-D-xylulose-5-phosphate synthase [EC:2.2.1.7]	1165		
+COG2609.faa.final_tree.fa___hmms___e8734f504217c6dc0c3b9c831e0ca5f5333a14762cd2e0b613bb73d7	K00615	E2.2.1.1, tktA, tktB; transketolase [EC:2.2.1.1]	961		
+COG2609.faa.final_tree.fa___hmms___e72b33b21ca6f23fa9a7497e85af2ffff3017d9098334686fbc2d9f9	K00615	E2.2.1.1, tktA, tktB; transketolase [EC:2.2.1.1]	982		
+COG2609.faa.final_tree.fa___hmms___979c05f4626860e40bd58b11b23e691f03529cc290739b485708d326			1337		
+COG2609.faa.final_tree.fa___hmms___52c29b751d422297035dbe8474a7e91123c7b36adf21a5f42b6b6e53	K01662	dxs; 1-deoxy-D-xylulose-5-phosphate synthase [EC:2.2.1.7]	1121		
+COG2609.faa.final_tree.fa___hmms___695c6fc803fd82f32df0e487fe340f6f8f883a699ff72923e9334f8d	K01662	dxs; 1-deoxy-D-xylulose-5-phosphate synthase [EC:2.2.1.7]	1114		
+COG2609.faa.final_tree.fa___hmms___cdb90c8be796f65c72fc09dbf5df10ef34df93ee219dd12d02360739			1267		
+COG2609.faa.final_tree.fa___hmms___87b548d676620fc3f99c283946c77fb837215814bfbbdd31dfd0a299	K00615	E2.2.1.1, tktA, tktB; transketolase [EC:2.2.1.1]	1060		
+COG2609.faa.final_tree.fa___hmms___a769e59944fb789673a90306fed7ef85e843a76237aa9729358b8ec1	K00615	E2.2.1.1, tktA, tktB; transketolase [EC:2.2.1.1]	958		
+COG2609.faa.final_tree.fa___hmms___5778d5938f2afbbe60890a009b9b2f8fd442f794a2a14ced85542550	K00615	E2.2.1.1, tktA, tktB; transketolase [EC:2.2.1.1]	985		
+COG2609.faa.final_tree.fa___hmms___b6e238b6ed97d4b102d7fada08b23aa25ac19e0500589add7a95064b			1174		
+COG2609.faa.final_tree.fa___hmms___597d3d3b06f6b12af77ee2ed140c86dc3d4cd7ca4f5c02011c9ad250	K01662	dxs; 1-deoxy-D-xylulose-5-phosphate synthase [EC:2.2.1.7]	1096		
+COG2609.faa.final_tree.fa___hmms___96d786ce8b2ec494b4c74ecb0ffbd296b593bcf5ac85cf2c53828310	K00615	E2.2.1.1, tktA, tktB; transketolase [EC:2.2.1.1]	1118		
+COG2609.faa.final_tree.fa___hmms___d5d8e21fcda32d93d379600cbf7a13b672788cc9f5ab60113f528ff9			1168		
+COG2609.faa.final_tree.fa___hmms___beb4dfe7097f4a6f92b295dcef67c2fed14a022f5fdbb74b8948acbc	K00615	E2.2.1.1, tktA, tktB; transketolase [EC:2.2.1.1]	1168		
+COG2609.faa.final_tree.fa___hmms___7c410456b075def2ce1ee46efc194dac15351cc2b95f3c38008591ab	K01662	dxs; 1-deoxy-D-xylulose-5-phosphate synthase [EC:2.2.1.7]	1124		
+COG2609.faa.final_tree.fa___hmms___2310935914c83a4618160a0a5a06248734b4dbc4af686e2f41949a49	K00615	E2.2.1.1, tktA, tktB; transketolase [EC:2.2.1.1]	1145		
+COG2609.faa.final_tree.fa___hmms___2735a3169de460602992333dd2335249da7a62afb9de7e5abcbb8dc7	K01662	dxs; 1-deoxy-D-xylulose-5-phosphate synthase [EC:2.2.1.7]	1108		
+COG2609.faa.final_tree.fa___hmms___722fd67ed27610d88bf43fca528b3dd2fba25527e4d16340c466a1d5			1243		

@@ -1,0 +1,5 @@
+genome_or_bin	aceE	aceF	csp	deaD	desA	dnaA	dnaJ	dnaK	gyrA	hupB	infA	infB	infC	nusA	otsA	pnp	rbfA	recA	rnr	tig	yflA
+D1	1	1	1	14	8	1	10	9	2	5	1	5	1	1	0	4	1	1	2	1	0
+D2	1	1	2	16	8	3	8	7	2	2	1	5	1	1	0	4	1	1	4	1	0
+D3	1	1	0	14	10	1	9	7	2	5	1	5	1	1	0	4	1	1	2	1	0
+D4	1	1	1	13	5	2	9	6	2	2	1	5	1	1	0	4	2	1	2	1	0
